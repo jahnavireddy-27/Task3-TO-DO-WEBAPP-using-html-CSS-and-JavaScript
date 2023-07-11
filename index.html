@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  
+	   
+    <title>TO-DO WEBAPP</title>
+</head>
+<body>
+  
+
+    <div class="container">
+        <div class="todolist">
+            <h2>TO-DO LIST</h2>
+            <div id="tasks">
+                <input type="text" id="inputtext" placeholder="write something...">
+                <button  onclick="addTask()" id="addbtn">Add Task</button>
+            </div>
+
+            <ul id="task-list">
+               
+            </ul>
+        </div>
+        <div class="container2">
+        <button id="completedtasksbtn" >Completed Tasks</button>
+        <div id="completedtaskscontainer"></div>
+        <ul id="list"></ul>
+        </div>
+
+    </div>        
+    <script src="script.js"></script>
+</body>
+</html>

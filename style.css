@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box ;
+}
+body{
+  background: cornflowerblue
+}
+
+.container{
+    width: 100%;
+    height:100vh;
+    padding:15px;
+  
+
+}
+
+.todolist{
+    width:100%;
+    max-width: 550px;
+    padding: 40px 30px 15px;
+    background: black;
+    border-radius: 8px;
+    margin: 100px auto 20px;
+}
+
+.todolist h2{
+    color:white;
+    padding-left: 150px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+#tasks {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: wheat;
+    border-radius: 5px;
+    padding-left:20px;
+    margin-bottom: 20px;
+
+}
+
+#inputtext{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+#addbtn{
+    border: none;
+    outline: none;
+    background:#ff5945;
+    padding:16px 50px;
+    color:black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 15px;
+
+}
+   
+ul#task-list li{
+    list-style: none;
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    background-color:#153677;
+    user-select: none;
+    position: relative;
+
+}
+
+ul#task-list li::before{
+    content: "";
+    position:absolute;
+    height:17px;
+    width:17px;
+    border-radius: 5px;
+    background-image:url(unchecked.png) ;
+    background-size: cover;
+    background-position:center;
+    top:20px;
+    left:15px;
+
+}
+
+
+
+ul#task-list li.checked::before{
+    background-image: url(checked.png);
+}
+
+ul#task-list li button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position:relative;
+  }
+ 
+  
+  ul#task-list li  button.edit {
+    background-color: #2196F3;
+ 
+  }
+  
+  ul#task-list li button.edit:hover {
+    background-color: #145488;
+  }
+  
+  ul#task-list li button.delete {
+    background-color: #F44336;
+   
+  }
+  
+  ul#task-list li button.delete:hover {
+    background-color: #a42220;
+  }
+
+
+  
+
+.container2{
+  width:100%;
+  max-width: 550px;
+  padding: 40px 30px 25px;
+  background: black;
+  border-radius: 8px;
+  margin: 100px auto 20px;
+}
+
+#completedtasksbtn{
+  
+    border: 5px;
+    outline: none;
+    color:white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background:blueviolet;
+    cursor: pointer;
+    
+  }
+
+   
+  ul#list li{
+    list-style-type:circle;
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 20px 8px 12px 5px;
+    user-select: none;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    margin-left: 15px;
+
+}
